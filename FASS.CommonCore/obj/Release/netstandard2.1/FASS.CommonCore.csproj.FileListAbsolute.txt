@@ -1,0 +1,10 @@
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\bin\Release\netstandard2.1\FASS.CommonCore.deps.json
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\bin\Release\netstandard2.1\FASS.CommonCore.dll
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\bin\Release\netstandard2.1\FASS.CommonCore.pdb
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\obj\Release\netstandard2.1\FASS.CommonCore.csproj.AssemblyReference.cache
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\obj\Release\netstandard2.1\FASS.CommonCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\obj\Release\netstandard2.1\FASS.CommonCore.AssemblyInfoInputs.cache
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\obj\Release\netstandard2.1\FASS.CommonCore.AssemblyInfo.cs
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\obj\Release\netstandard2.1\FASS.CommonCore.csproj.CoreCompileInputs.cache
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\obj\Release\netstandard2.1\FASS.CommonCore.dll
+E:\MyPro\FASS.CommonCore\FASS.CommonCore\FASS.CommonCore\obj\Release\netstandard2.1\FASS.CommonCore.pdb
