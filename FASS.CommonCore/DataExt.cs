@@ -1,8 +1,6 @@
 ﻿namespace FASS.CommonCore
 {
-    using System;
     using System.Data;
-    using System.Reflection;
 
     public static class DataExt
     {
@@ -11,12 +9,10 @@
             if (row == null|| string.IsNullOrEmpty(strColName)|| row.Table.IsNullOrEmpty())
                 return errorValue;
 
-
             if (row.Table.Columns.Contains(strColName) && !row.IsNull(strColName))
             {
                 return row[strColName].ToString();
             }
-
             return errorValue;
         }
 
@@ -44,7 +40,6 @@
         {
             if (row == null || string.IsNullOrEmpty(strColName)|| row.Table.IsNullOrEmpty() || !row.Table.Columns.Contains(strColName)|| row.IsNull(strColName))
                 return errorValue;
-
 
             return row[strColName].ObjToInt(errorValue);
         }

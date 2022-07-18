@@ -1,10 +1,10 @@
-﻿
-
-namespace FASS.CommonCore
+﻿namespace FASS.CommonCore
 {
     using Newtonsoft.Json;
+    using System.IO;
     using System.Security.Cryptography;
     using System.Text;
+    using System.Xml.Serialization;
 
     public static class StringExt
     {
@@ -16,7 +16,6 @@ namespace FASS.CommonCore
         }
 
 
-
         public static string ObjectToJsonString(this object obj)
         {
             if (obj == null)
@@ -24,6 +23,39 @@ namespace FASS.CommonCore
             string ObjectToJsonString = JsonConvert.SerializeObject(obj);
             return ObjectToJsonString;
         }
+
+
+        public static T XmlStringToObject<T>(this string strXml) where T : class,new()
+        {
+            T t = new T();
+            if (string.IsNullOrEmpty(strXml))
+                return t;
+            using (StringReader sr = new StringReader(strXml))
+            {
+                XmlSerializer xz = new XmlSerializer(typeof(T));
+                t= xz.Deserialize(sr) as T;
+            }
+
+            return t;
+        }
+
+
+        public static string ObjectToXmlString(this object obj)
+        {
+            XmlSerializer serializer = new XmlSerializer(obj.GetType());
+            string xml = string.Empty;
+            using (MemoryStream stream = new MemoryStream())
+            {
+                serializer.Serialize(stream, obj);
+                stream.Position = 0;
+                using (StreamReader streamReader = new StreamReader(stream))
+                {
+                    xml = streamReader.ReadToEnd();
+                }
+            }
+            return xml;
+        }
+
 
 
         /// <summary>

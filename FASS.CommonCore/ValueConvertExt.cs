@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FASS.CommonCore
+﻿namespace FASS.CommonCore
 {
+    using System;
+
     public static class ValueConvertExt
     {
         public static bool ObjToBool(this object obj, bool errorValue = false)
@@ -16,7 +14,6 @@ namespace FASS.CommonCore
 
                 if (obj.ObjToInt() > 0)
                     return true;
-                
             }
             return errorValue;
         }
